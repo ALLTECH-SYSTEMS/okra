@@ -1,9 +1,9 @@
 /* eslint-disable prettier/prettier */
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document } from 'mongoose';
+// import { Document } from 'mongoose';
 
 @Schema()
-export class User extends Document {
+export class User {
   @Prop({ required: true })
   email: string;
 

@@ -16,6 +16,12 @@ export class Customer extends Document {
 
   @Prop()
   phoneNumber: string;
+
+  @Prop()
+  accountNumber: string;
+
+  @Prop()
+  bank: string;
 }
 
 export const CustomerSchema = SchemaFactory.createForClass(Customer);

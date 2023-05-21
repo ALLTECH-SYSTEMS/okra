@@ -21,7 +21,7 @@ export class UserController {
 
   @Post('login')
   async login(@Body() loginDto: LoginDto): Promise<{ access_token: string }> {
-    // console.log(loginDto);
+
     const user = await this.authService.validateUser(loginDto.email, loginDto.password);
     return this.authService.login(user);
   }
